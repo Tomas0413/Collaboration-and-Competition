@@ -18,6 +18,24 @@ Hyperparameters (defined in ddpg_agent.py)
 * WEIGHT_DECAY = 0        (L2 weight decay)
 * UPDATE_EVERY = 1        (how many steps to take before updating target networks)
 
+### Actor neural network
+
+* The Actor neural network consists of three fully connected (FC) layers.
+* The input has 24 channels (each agent observes a state with length: 24)
+* The output channels of the first FC layer is: 256
+* The input and output channels of the second FC layer are: 256, 128
+* The input channels of the third FC layer are: 128
+* The output has 2 channels (actions: movement toward (or away from) the net, and jumping)
+
+### Critic neural network
+
+* The Critic neural network consists of three fully connected (FC) layers.
+* The input has 24 channels (each agent observes a state with length: 24)
+* The output channels of the first FC layer is: 256
+* The input channels of the second FC layer is: 256 + 2 (actions)
+* The output channels of the second FC layer is: 128
+* The output has 1 channel
+
 # Plot of Rewards
 
 This chart illustrates the rewards received per episode. We consider the problem solved when the agent reaches at least +0.5 points over 100 episodes. In our case, it took 2700 episodes to achieve this goal.
