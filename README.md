@@ -3,8 +3,8 @@
 This environment has two agents that control Tennis rackets to bounce a ball over a net.
 
 * The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Each agent receives its own, local observation.
-* Two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping.
-* After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 2 (potentially different) scores. We then take the maximum of these 2 scores.
+* Two continuous actions are available, corresponding to the movement toward (or away from) the net, and jumping.
+* After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 2 (potentially different) scores. We then take the maximum of these two scores.
 
 
 # Getting Started
