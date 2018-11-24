@@ -25,3 +25,8 @@ This chart illustrates the rewards received per episode. We consider the problem
 ![Rewards per episode](rewards_per_episode.png)
 
 # Ideas for Future Work
+
+* I would like to use [Tensorboard for PyTorch](https://github.com/lanpa/tensorboardX)
+* I would like to spend some time and compare the performance of the agent to [Distributed Distributional Deterministic Policy Gradients (D4PG)](https://openreview.net/forum?id=SyZipzbCb) algorithm
+* I would like to compare the performance of the algorthm on CPU vs GPU
+* I'm also interested in exploring [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/abs/1710.02298)
